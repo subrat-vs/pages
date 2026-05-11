@@ -1,21 +1,30 @@
-# Assignment 1
+# UI Task 1
 
 ![Pikachu](/A-1/pikachu/assets/pikachu-task.png)  
 
-task 1 : https://subrat-vs.github.io/pages/A-1/pikachu/pikachu.html  
+1 : https://subrat-vs.github.io/pages/A-1/pikachu/pikachu.html  
 
 ---  
 
 ![Pokemon](/A-1/pokemon/assets/pokemon-task.png)  
 
-task 2 : https://subrat-vs.github.io/pages/A-1/pokemon/pokemon.html  
+2 : https://subrat-vs.github.io/pages/A-1/pokemon/pokemon.html  
 
 ---
-# Assignment 2
+# UI Task 2
 
 
 ![Astro](/A-2/astro/assets/astro-task.png)  
 
-task 1 : https://subrat-vs.github.io/pages/A-2/task-1/astro.html
+1 : https://subrat-vs.github.io/pages/A-2/astro/astro.html
+
+---
+
+# UI Task 3
+
+
+![Potato Chips](/A-3/assets/chips-task.webp)  
+
+1 : https://subrat-vs.github.io/pages/A-3/chips/chips.html
 
 ---
