@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon</title>
+    <link rel="stylesheet" href="pokemon.css" />
+    <link rel="shortcut icon" href="assets/pokemon_logo.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="bg">
+      <nav class="nav">
+        <button class="btn">
+          <i class="ri-menu-line"></i>
+        </button>
+        <a href="pikachu.html">
+          <img src="assets/pokemon_logo.png" alt="Pokemon Logo" class="logo" width="200px"/>
+        </a>
+        <button class="btn" id="btn-clr">
+          <i class="ri-sun-line"></i>
+        </button>
+      </nav>
+
+      <div class="top">
+        <div class="left">
+          <i class="ri-search-line icon"></i>
+          <input
+            type="text"
+            placeholder="Search for a Pokémon..."
+            class="btn"
+            id="search"
+          />
+        </div>
+        <div class="right">
+          <button class="btn" id="filter">
+            Filter by types (1) &nbsp; <i class="ri-arrow-down-s-line"></i>
+          </button>
+          <button class="btn" id="icon">
+            <i class="ri-sound-module-line"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card green">
+          <div class="card-head">
+            <span>#0908</span>
+            <button class="btn cb"><i class="ri-poker-hearts-line"></i></button>
+          </div>
+          <div class="type-dot green-dot"><img src="assets/leaf.png" alt="leaf-icon" width="10px"></div>
+          <div class="img-wrap green-wrap">
+            <img src="assets/Meowscarada.png" alt="Meowscarada" class="img" width="200px"/>
+          </div>
+          <div class="card-foot">
+            <div class="card-info">
+              <h3 class="card-name">Meowscarada</h3>
+              <div class="badge green-badge">
+                <img src="assets/leaf.png" alt="leaf-icon" width="10px"> GRASS
+              </div>
+            </div>
+            <button class="btn arrow-btn">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card gray">
+          <div class="card-head">
+            <span>#0624</span>
+            <button class="btn cb"><i class="ri-poker-hearts-line"></i></button>
+          </div>
+          <div class="type-dot gray-dot"><i class="ri-hexagon-line"></i></div>
+          <div class="img-wrap gray-wrap">
+            <img src="assets/Powniard.png" alt="Pawniard" class="img" />
+          </div>
+          <div class="card-foot">
+            <div class="card-info">
+              <h3 class="card-name">Pawniard</h3>
+              <div class="badge gray-badge">
+                <i class="ri-hexagon-line"></i> DARK / STEEL
+              </div>
+            </div>
+            <button class="btn arrow-btn">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card red">
+          <div class="card-head">
+            <span>#0229</span>
+            <button class="btn cb"><i class="ri-poker-hearts-line"></i></button>
+          </div>
+          <div class="type-dot red-dot"><img src="assets/fire.png" alt="fire" width="12px"></div>
+          <div class="img-wrap red-wrap">
+            <img src="assets/Houndoom.png" alt="Houndoom" class="img" />
+          </div>
+          <div class="card-foot">
+            <div class="card-info">
+              <h3 class="card-name">Houndoom</h3>
+              <div class="badge red-badge">
+                <img src="assets/fire.png" alt="fire" width="12px"> DARK / FIRE
+              </div>
+            </div>
+            <button class="btn arrow-btn">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card blue">
+          <div class="card-head">
+            <span>#0686</span>
+            <button class="btn cb"><i class="ri-poker-hearts-line"></i></button>
+          </div>
+          <div class="type-dot blue-dot"><img src="assets/water.png" alt="fire" width="10px"></div>
+          <div class="img-wrap blue-wrap">
+            <img src="assets/Inkay.webp" alt="Inkay" class="img" />
+          </div>
+          <div class="card-foot">
+            <div class="card-info">
+              <h3 class="card-name">Inkay</h3>
+              <div class="badge blue-badge">
+                <img src="assets/water.png" alt="fire" width="10px"> DARK / PSYCHIC
+              </div>
+            </div>
+            <button class="btn arrow-btn">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards" id="last">
+        <div class="l-card">
+          <div class="feat">
+            <div class="feat-icon feat-blue">
+              <i class="ri-focus-3-line"></i>
+            </div>
+            <div class="feat-text">
+              <h4>Explore</h4>
+              <p>Discover all your favorite Pokémon</p>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="feat-icon feat-green">
+              <img src="assets/leaf.png" alt="leaf-icon" width="20px">
+            </div>
+            <div class="feat-text">
+              <h4>Filter</h4>
+              <p>Find Pokémon by types and abilities</p>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="feat-icon feat-yellow">
+              <i class="ri-star-fill"></i>
+            </div>
+            <div class="feat-text">
+              <h4>Collection</h4>
+              <p>Save and manage your collection</p>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="feat-icon feat-purple">
+            </div>
+            <div class="feat-text">
+              <h4>Stats</h4>
+              <p>View stats and learn about Pokémon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <i class="ri-focus-3-line f-icon"></i>
+        <p>&COPY; 2024 Pokémon. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

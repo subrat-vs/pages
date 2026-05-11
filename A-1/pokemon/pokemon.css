@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #dde2f3;
+  display: flex;
+  justify-content: center;
+}
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  min-height: 100vh;
+  background: #f4f7fd;
+  border-radius: 20px 20px 0 0;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.btn {
+  background: #f4f7fd;
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  color: #608cd0;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.top {
+  padding: 0 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 38%;
+  min-width: 220px;
+}
+
+.icon {
+  position: absolute;
+  left: 16px;
+  font-size: 16px;
+  color: black;
+  pointer-events: none;
+}
+
+#search {
+  width: 80%;
+  height: 40px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  padding-left: 40px;
+  padding-right: 16px;
+  font-size: small;
+  color: rgba(201, 198, 198, 0.5);
+  background: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.07);
+  outline: none;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#filter {
+  width: 200px;
+  height: 40px;
+  border-radius: 50px;
+  color: #222;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#icon {
+  border-radius: 40%;
+  color: #333;
+  font-size: 18px;
+}
+
+#btn-clr {
+  color: #333;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 22%;
+  min-width: 200px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.07);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.green {
+  border-bottom: 4px solid #7fc777;
+}
+.gray {
+  border-bottom: 4px solid #6d8297;
+}
+.red {
+  border-bottom: 4px solid #f57d68;
+}
+.blue {
+  border-bottom: 4px solid #879ffb;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  color: #b2b7c2;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.cb {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #c8cdd8;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  box-shadow: none;
+  background: #fff;
+}
+
+.type-dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.green-dot {
+  background: rgba(127, 199, 119, 0.2);
+}
+.gray-dot {
+  background: rgba(109, 130, 151, 0.2);
+  color: #6d8297;
+}
+.red-dot {
+  background: rgba(245, 125, 104, 0.2);
+}
+.blue-dot {
+  background: rgba(135, 159, 251, 0.2);
+}
+
+.img-wrap {
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 170px;
+  margin-bottom: 12px;
+}
+
+.green-wrap {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(127, 199, 119, 0.22) 0%,
+    rgba(127, 199, 119, 0.04) 70%,
+    transparent 100%
+  );
+}
+.gray-wrap {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(109, 130, 151, 0.22) 0%,
+    rgba(109, 130, 151, 0.04) 70%,
+    transparent 100%
+  );
+}
+.red-wrap {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(245, 125, 104, 0.22) 0%,
+    rgba(245, 125, 104, 0.04) 70%,
+    transparent 100%
+  );
+}
+.blue-wrap {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(135, 159, 251, 0.22) 0%,
+    rgba(135, 159, 251, 0.04) 70%,
+    transparent 100%
+  );
+}
+
+.img {
+  height: 150px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.card-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.card-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.green-badge {
+  background: rgba(127, 199, 119, 0.18);
+  color: #5a9e52;
+}
+.gray-badge {
+  background: rgba(109, 130, 151, 0.18);
+  color: #4a6175;
+}
+.red-badge {
+  background: rgba(245, 125, 104, 0.18);
+  color: #c55a45;
+}
+.blue-badge {
+  background: rgba(135, 159, 251, 0.18);
+  color: #5570d4;
+}
+
+.arrow-btn {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  color: #333;
+  font-size: 16px;
+}
+
+#last {
+  padding: 20px 30px 30px;
+  gap: 0;
+}
+
+.l-card {
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.07);
+  padding: 28px 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.feat {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+  min-width: 180px;
+}
+
+.feat-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.feat-blue {
+  background: rgba(96, 140, 208, 0.15);
+  color: #608cd0;
+}
+.feat-green {
+  background: rgba(127, 199, 119, 0.15);
+  color: #7fc777;
+}
+.feat-yellow {
+  background: rgba(230, 168, 0, 0.15);
+  color: #e6a800;
+}
+.feat-purple {
+  background: rgba(147, 112, 219, 0.15);
+  color: #9370db;
+}
+
+.feat-text h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+
+.feat-text p {
+  font-size: 12px;
+  color: #9aa3b2;
+  line-height: 1.5;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px 30px;
+  gap: 8px;
+}
+
+.f-icon {
+  font-size: 22px;
+  color: #c8cdd8;
+}
+
+.footer p {
+  font-size: 13px;
+  color: #b2b7c2;
+}
