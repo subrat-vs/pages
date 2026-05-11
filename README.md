@@ -23,7 +23,7 @@
 # UI Task 3
 
 
-![Potato Chips](/A-3/assets/chips-task.webp)  
+![Potato Chips](/A-3/chips/assets/chips-task.webp)  
 
 1 : https://subrat-vs.github.io/pages/A-3/chips/chips.html
 
