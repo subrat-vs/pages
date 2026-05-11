@@ -16,6 +16,6 @@ task 2 : https://subrat-vs.github.io/pages/A-1/pokemon/pokemon.html
 
 ![Astro](/A-2/astro/assets/astro-task.png)  
 
-task 1 : https://subrat-vs.github.io/pages/A-2/task-1/astro.html
+task 1 : https://subrat-vs.github.io/pages/A-2/astro/astro.html
 
 ---
