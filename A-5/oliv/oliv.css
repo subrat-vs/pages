@@ -1,0 +1,728 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 0.1px 100px;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  margin-top: 20px;
+  border-bottom: 1px solid #f4f4f5;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50%;
+  height: 100%;
+  gap: 1.25rem;
+}
+
+.logo img {
+  width: 6vw;
+}
+
+.nav {
+  width: 50%;
+  height: 100%;
+  gap: 2.25rem;
+}
+
+.nav h1 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+a {
+  color: black;
+}
+
+.btn {
+  border: 1px solid black;
+  border-radius: 50px;
+  background: transparent;
+  font-family: serif;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.nav button {
+  padding: 10px 14px;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.glow {
+  background-color: #EDDED5;
+  border: none;
+  border-radius: 50px;
+  padding: 4px 8px;
+  font-family: serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+section {
+  width: 100%;
+  height: 80%;
+}
+
+#building {
+  font-size: 6.5vw;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 25vh;
+  line-height: 100px;
+}
+
+section>p {
+  font-size: 1.5vw;
+  padding-top: 20px;
+  line-height: 34px;
+}
+
+section>button {
+  background: black;
+  color: white;
+  border-radius: 50px;
+  padding: 16px 28px;
+  margin-top: 2rem;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+}
+
+#move {
+  margin-top: 40px;
+  height: 20vh;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#container {
+  height: 100%;
+  width: 110%;
+  display: inline-block;
+  animation-name: scroll;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+#container img {
+  height: 6vh;
+  display: inline;
+  margin: 50px 0px 50px 120px;
+  align-items: center;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.box {
+  width: 100%;
+  height: 70vh;
+  border-bottom: 1px solid #e4e4e7;
+}
+
+.cards {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 23%;
+  height: 90%;
+  background-color: #f4f4f5;
+  padding: 60px 50px 0 50px;
+}
+
+.card h1 {
+  font-size: 1.8vw;
+  font-weight: 300;
+}
+
+.card p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #52525b;
+  margin-top: 16px;
+}
+
+.card h2 {
+  padding-top: 16px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.b-text {
+  padding: 68px 0px 8px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3f3f46;
+  font-weight: normal;
+}
+
+.info {
+  width: 100%;
+  height: 20vh;
+  justify-content: space-between;
+}
+
+.info h1 {
+  font-size: 3.5vw;
+  font-weight: normal;
+}
+
+.info-btn {
+  padding: 12px 24px;
+}
+
+.img-cards {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-head {
+  width: 49%;
+  height: 100%;
+}
+
+.card-img {
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+}
+
+.card-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+  object-position: center;
+}
+
+
+.card-img img:hover {
+  height: 110%;
+  width: 110%;
+}
+
+.card-head {
+  width: 100%;
+  height: 10%;
+  justify-content: space-between;
+}
+
+.card-head h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.card-head button {
+  padding: 4px 12px;
+}
+
+.b-text-div {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  border-bottom: 1px solid #e4e4e7;
+}
+
+.b-text-div h1 {
+  position: relative;
+  top: 76%;
+  font-size: 14px;
+  color: #3f3f46;
+  font-weight: normal;
+}
+
+.v-cards {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.v-card h4 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.v-card h2 {
+  font-size: 24px;
+  font-weight: normal;
+  padding-top: 32px;
+}
+
+.v-card h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.v-card i {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.v-card {
+  width: 23%;
+  height: 100%;
+  padding: 50px;
+}
+
+.v {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.v-blank {
+  height: 100%;
+  width: 23%;
+  background: white;
+}
+
+.about-btn {
+  font-size: 14px;
+  padding: 12px 32px;
+  background-color: black;
+  color: white;
+  margin-top: 108px;
+}
+
+.m-text {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin-top: 15vh;
+  border-bottom: 1px solid #EDDED5;
+}
+
+.m-text h1 {
+  font-size: 3.2vw;
+  padding-left: 25%;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.m-text-p {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+
+.m-text-p p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #52525b;
+}
+
+.ot {
+  margin-top: 116px;
+  color: #3f3f46;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.team {
+  width: 100%;
+  height: 20vh;
+  justify-content: space-between;
+}
+
+.team h1 {
+  font-size: 3.2vw;
+  font-weight: normal;
+}
+
+.team button {
+  padding: 12px 24px;
+  font-size: 14px;
+
+}
+
+.team-cards {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.t-card-t {
+  background: #F1F6F5;
+  padding: 60px 0 0 60px;
+}
+
+.t-card-t h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.t-card-t h1 {
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: normal;
+}
+
+.t-card-t h5 {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #A1A1AA;
+  font-weight: normal;
+}
+
+.t-card-t button {
+  background: black;
+  color: white;
+  padding: 16px 32px;
+  margin-top: 80px;
+}
+
+.t-card {
+  width: 23%;
+  height: 100%;
+}
+
+.t-card-1 {
+  width: 100%;
+  height: 85%;
+  overflow: hidden;
+  position: relative;
+}
+
+.t-card-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.t-card-2 {
+  width: 100%;
+  height: 15%;
+  justify-content: space-between;
+}
+
+.t-card-2 h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.t-card-2 button {
+  font-size: 14px;
+  padding: 4px 12px;
+}
+
+#bottom {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background: linear-gradient(transparent);
+  bottom: -20%;
+  position: absolute;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+  gap: 10px;
+  padding-right: 25px;
+}
+
+#card:hover #bottom {
+  bottom: 0;
+}
+
+#bottom i {
+  padding: 8px 10px;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+
+}
+
+.b-info {
+  width: 100%;
+  height: 50VH;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.b-info-1 {
+  width: 20%;
+  height: 100%;
+}
+
+.b-info-2 {
+  width: 50%;
+  height: 100%;
+  padding-right: 40px;
+}
+
+.b-info-2 h1 {
+  font-size: 2vw;
+  font-weight: normal;
+}
+
+.b-info-2 p {
+  margin-top: 40px;
+  line-height: 1.5rem;
+}
+
+.contact-card {
+  width: 100%;
+  height: 80vh;
+  background: #F1F6F5;
+  margin-top: 80px;
+  display: flex;
+}
+
+.ct-1 {
+  width: 30%;
+  height: 100%;
+  padding: 100px 0 0 100px;
+}
+
+.ct-1 h1 {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.ct-2 {
+  width: 70%;
+  height: 100%;
+  padding-top: 100px;
+}
+
+.ct-2 h1 {
+  font-size: 4vw;
+  line-height: 80px;
+  font-weight: normal;
+}
+
+.ct-2 p {
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 12px;
+  font-weight: normal;
+}
+
+.ct-2 button {
+  font-size: 14px;
+  background: black;
+  color: white;
+  padding: 12px 32px;
+  margin-top: 52px;
+}
+
+.ct-2 i {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.blog-txt {
+  width: 100%;
+  height: 10vh;
+  border-bottom: 1px solid #e4e4e7;
+  margin-top: 40px;
+}
+
+.blog-txt h1 {
+  font-size: 14px;
+  padding-top: 40px;
+  font-weight: normal;
+}
+
+.blog {
+  width: 100%;
+  height: 20vh;
+  justify-content: space-between;
+}
+
+.blog h1 {
+  font-size: 3.2vw;
+  font-weight: normal;
+}
+
+.blog button {
+  padding: 12px 24px;
+  font-size: 14px;
+
+}
+
+.blog-cards {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-card {
+  width: 23%;
+  height: 100%;
+}
+
+.bc-1 {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+}
+
+.bc-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+  object-position: center;
+}
+
+.bc-1 img:hover {
+  width: 110%;
+  height: 110%;
+}
+
+.bc-2 {
+  width: 100%;
+  height: 30%;
+}
+
+.bc-2 h1 {
+  font-size: 20px;
+  font-weight: normal;
+  padding-top: 12px;
+}
+
+.bc-2 h2 {
+  font-size: 14px;
+  font-weight: normal;
+  padding-top: 16px;
+}
+
+.f-links {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e4e4e7;
+}
+
+.f-sec {
+  width: 23%;
+  height: 90%;
+}
+
+.fc-1 {
+  width: 100%;
+  height: 15%;
+  padding-top: 12px;
+  border-bottom: 1px solid #e4e4e7;
+}
+
+.fc-1 h1 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 12px;
+}
+
+.fc-2 {
+  width: 100%;
+  height: 85%;
+  line-height: 40px;
+  margin-top: 20px;
+}
+
+.fc-2 a {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.fc-2 button {
+  background: black;
+  color: white;
+  padding: 16px 32px;
+  margin-top: 20px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+#footer i {
+  padding: 8px 10px;
+  color: black;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  justify-content: space-between;
+  font-weight: normal;
+}
+
+footer>h1 {
+  color: #A1A1AA;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#footer2 h1 {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)10s;
+}
+
+.hover-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom left;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+  transform: scaleX(0);
+}
+
+.hover-underline:hover::after {
+  transform: scale(1);
+}
