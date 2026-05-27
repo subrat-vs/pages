@@ -130,7 +130,7 @@ header {
 .hero_section {
     width: 100%;
     height: 100vh;
-    background-image: url("assets/hero_bg.jpg");
+    background-image: url("https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=1575.0");
     background-size: cover;
     background-position: center;
     margin-top:-200px ;
@@ -700,7 +700,7 @@ header {
     position:relative;
     width:100%;
     min-height:220vh;
-    background-image:url("assets/hero_bg.jpg");
+    background-image:url("https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=1200");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -1564,7 +1564,7 @@ header {
 .company_section{
     width:100%;
     min-height:100vh;
-    background-image:url('assets/footer-extended.png');
+    background-image:url('https://www.twoleavestea.com/cdn/shop/files/1440.webp?v=1771593223&width=1350.0');
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
