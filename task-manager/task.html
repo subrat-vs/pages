@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-name">TaskMaster</span>
+            </div>
+            <label class="toggle">
+                <input type="checkbox" id="toggle">
+                <div class="icon-set">
+                    <svg class="sun-icon" xmlns="http://w3.org" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4" />
+                        <path d="M12 2v2" />
+                        <path d="M12 20v2" />
+                        <path d="m4.93 4.93 1.41 1.41" />
+                        <path d="m17.66 17.66 1.41 1.41" />
+                        <path d="M2 12h2" />
+                        <path d="M20 12h2" />
+                        <path d="m6.34 17.66-1.41 1.41" />
+                        <path d="m19.07 4.93-1.41 1.41" />
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://w3.org" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                    </svg>
+                </div>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <section class="task-info">
+            <div class="info">
+                <div class="chip" id="total">
+                    <span class="stat-num" id="countTotal">0</span>
+                    <span class="stat-label">TOTAL</span>
+                </div>
+                <div class="chip pending" id="pending">
+                    <span class="stat-num" id="countPending">0</span>
+                    <span class="stat-label">PENDING</span>
+                </div>
+                <div class="chip done" id="done">
+                    <span class="stat-num" id="countDone">0</span>
+                    <span class="stat-label">DONE</span>
+                </div>
+            </div>
+            <button type="button" class="btn new-task">
+                NEW TASK
+            </button>
+        </section>
+        <section class="form">
+            <form>
+                <div class="field-group">
+                    <label for="taskTitle">Task Title</label>
+                    <input
+                    type="text"
+                    id="taskTitle"
+                    class="field-input"
+                    placeholder="What needs to be done?"
+                    maxlength="60"
+                    autocomplete="off"
+                    />
+                </div>
+                <div class="field-group">
+                    <label for="taskCategory">Category</label>
+                    <select id="taskCategory"  class="field-select">
+                        <option value="personal">Personal</option>
+                        <option value="work">Work</option>
+                        <option value="learning">Learning</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="field-group">
+                    <label for="taskPriority">Priority</label>
+                    <select id="taskPriority" class="field-select">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn add-task">
+                    + Add Task
+                </button>
+            </form>
+        </section>
+
+        <section class="task-list" id="taskList">
+            <p class="empty-state" id="emptyState">No tasks yet. Click "New Task" to add one.</p>
+        </section>
+    </main>
+    <script src="task.js"></script>
+</body>
+
+</html>
